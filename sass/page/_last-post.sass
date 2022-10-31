@@ -1,0 +1,39 @@
+.last-post
+    width: 100%
+    height: auto
+    border-bottom: 1px solid #E6E6E6
+    margin-bottom: 9rem
+    text-align: center
+    &__item
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: space-between
+    &__card
+        width: 24%
+        height: auto
+        text-align: left
+        margin-bottom: 7rem
+        @include respond(tab-land)
+            width: 32%
+            text-align: center
+        @include respond(tab-port)
+            width: 48%
+        @include respond(phone)
+            width: 100%
+            text-align: center
+    &__img
+        margin-bottom: 2rem
+        @include respond(phone)
+            width: 75%
+            text-align: center
+    &__title
+        font-family: $font-Tenor
+        font-style: normal
+        font-weight: 400
+        font-size: 2rem
+        line-height: 2.4rem
+        text-transform: uppercase
+        color: $color-black
+        margin-bottom: 1.5rem
